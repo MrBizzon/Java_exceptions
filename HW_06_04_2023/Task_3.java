@@ -45,4 +45,5 @@ public class Task_3 {
             System.out.println(number);
         }
     }
+    
 }
