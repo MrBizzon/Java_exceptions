@@ -31,5 +31,4 @@ public class Task_2 {
         }
         return thirdValue;
     }
-    
 }
