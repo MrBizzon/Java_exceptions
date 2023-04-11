@@ -13,14 +13,14 @@ public class Task_1 {
 
         Scanner scanner = new Scanner(System.in);
         boolean valid;
-        Float myNumber = null;
+        Float floatNumber = null;
         String inputData;
         do {
             System.out.print("Введите число: \t");
             try {
                 inputData = scanner.nextLine();
                 if (Float.parseFloat(inputData) > 0) {
-                    myNumber = Float.parseFloat(inputData);
+                    floatNumber = Float.parseFloat(inputData);
                     valid = true;
                 } else {
                     System.out.println("Неправильный ввод");
@@ -30,6 +30,6 @@ public class Task_1 {
                 valid = false;
             }
         } while (!valid);
-        System.out.println("Вы ввели число: " + myNumber);
+        System.out.println("Вы ввели число: " + floatNumber);
     }
 }
