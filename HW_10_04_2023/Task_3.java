@@ -28,5 +28,4 @@ public class Task_3 {
     public static void printSum(Integer a, Integer b) throws FileNotFoundException {
         System.out.println(a + b);
     }
-
 }
