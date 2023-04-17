@@ -18,7 +18,7 @@ public class DisplayView<V extends View> {
         do {
             String input = view.getInputData(
                     "Введите данные через пробел (Фамилию Имя Отчество ДатуРождения НомерТелефона Пол),\n" +
-                            " или Exit для прекращения программы:");
+                            "или Exit для прекращения программы:");
             if (input.equals("Exit")) {
                 flagWork = false;
                 break;
@@ -59,7 +59,7 @@ public class DisplayView<V extends View> {
 
     private void writePersonData(DataCheck data) throws IOException {
         File filepath = new File(
-                "C:\\Users\\Admin\\Java_projects\\JavaExceptions\\src\\seminar3\\homework\\" + data.getLastName());
+                "c:\\Users\\Bz\\Desktop\\Java_exceptions\\HW_16_04_2023\\LastName.txt" + data.getLastName());
         try (FileWriter fw = new FileWriter(filepath, true)) {
             fw.append(data.toString() + "\n");
         } catch (IOException e) {
