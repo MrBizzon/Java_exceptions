@@ -10,6 +10,6 @@ public class GenderException extends Exception {
     @Override
     public String getMessage() {
         return "Неправильно указан пол: '" + data + "'!\n" +
-                "Формат ввода пола: m или f.";
+                "Формат ввода пола: M или F.";
     }
 }
