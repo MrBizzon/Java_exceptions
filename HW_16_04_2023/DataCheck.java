@@ -79,7 +79,7 @@ public class DataCheck {
                             fullErrorsMessages.append(e.getMessage());
                         }
                     } else {
-                        fullErrorsMessages.append("Должен быть только один телефонный нормер, а не несколько: '"
+                        fullErrorsMessages.append("Должен быть только один телефонный номер, а не несколько: '"
                                 + this.phone + "','" + string + "'\n");
                     }
                 }
