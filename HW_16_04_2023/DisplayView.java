@@ -17,7 +17,7 @@ public class DisplayView<V extends View> {
         boolean flagWork = true;
         do {
             String input = view.getInputData(
-                    "Введите данные через пробел (Фамилию Имя Отчество ДатуРождения НомерТелефона Пол),\n" +
+                    "Введите данные через пробел (Фамилию Имя Отчество Дату.Рождения НомерТелефона Пол),\n" +
                             "или Exit для прекращения программы:");
             if (input.equals("Exit")) {
                 flagWork = false;
@@ -28,10 +28,10 @@ public class DisplayView<V extends View> {
                 int inputDataCount = checkInputDataCount(splitedInput.length);
                 if (inputDataCount == -1) {
                     view.printOutputData("Слишком мало данных на вводе (должно быть " + DataCheck.dataCount
-                            + " разделённых пробелом ' ': Фамилия Имя Отчество НомерТелефона ДатаРождения Пол)\n");
+                            + " разделённых пробелом ' ': Фамилия Имя Отчество Дата.Рождения НомерТелефона Пол)\n");
                 } else if (inputDataCount == 0) {
                     view.printOutputData("Слишком много данных на вводе (должно быть " + DataCheck.dataCount
-                            + " разделённых пробелом ' ': Фамилия Имя Отчество НомерТелефона ДатаРождения Пол)\n");
+                            + " разделённых пробелом ' ': Фамилия Имя Отчество Дата.Рождения НомерТелефона Пол)\n");
                 } else {
                     try {
                         model = new DataCheck();
