@@ -11,4 +11,5 @@ public class ParseInputDataException extends Exception {
     public String getMessage() {
         return this.data;
     }
+
 }
