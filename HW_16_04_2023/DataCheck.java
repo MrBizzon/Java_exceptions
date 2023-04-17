@@ -126,7 +126,7 @@ public class DataCheck {
     private LocalDate checkBirthDate(String inputString) throws BirthDateException {
         try {
             return LocalDate.parse(inputString,
-                    DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+                    DateTimeFormatter.ofPattern("DD.MM.YYYY"));
         } catch (DateTimeParseException e) {
             throw new BirthDateException(inputString);
         }
